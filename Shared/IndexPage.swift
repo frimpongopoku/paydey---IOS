@@ -1,13 +1,7 @@
-//
-//  ContentView.swift
-//  Shared
-//
-//  Created by frimpongOpokuAgyemang on 07/01/2021.
-//
 
 import SwiftUI
 
-struct ContentView: View {
+struct IndexPage: View {
     var body: some View {
         Text("Hello, world!")
             .padding()
@@ -16,6 +10,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        IndexPage()
     }
 }

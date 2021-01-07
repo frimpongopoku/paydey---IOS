@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		9E4B04CE25A739D20071C1C3 /* paydeyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B04BB25A739D10071C1C3 /* paydeyApp.swift */; };
 		9E4B04CF25A739D20071C1C3 /* paydeyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B04BB25A739D10071C1C3 /* paydeyApp.swift */; };
-		9E4B04D025A739D20071C1C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B04BC25A739D10071C1C3 /* ContentView.swift */; };
-		9E4B04D125A739D20071C1C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B04BC25A739D10071C1C3 /* ContentView.swift */; };
+		9E4B04D025A739D20071C1C3 /* IndexPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B04BC25A739D10071C1C3 /* IndexPage.swift */; };
+		9E4B04D125A739D20071C1C3 /* IndexPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B04BC25A739D10071C1C3 /* IndexPage.swift */; };
 		9E4B04D225A739D20071C1C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E4B04BD25A739D20071C1C3 /* Assets.xcassets */; };
 		9E4B04D325A739D20071C1C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E4B04BD25A739D20071C1C3 /* Assets.xcassets */; };
+		9E4B04E025A73B900071C1C3 /* Color.Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B04DF25A73B900071C1C3 /* Color.Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9E4B04BB25A739D10071C1C3 /* paydeyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paydeyApp.swift; sourceTree = "<group>"; };
-		9E4B04BC25A739D10071C1C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9E4B04BC25A739D10071C1C3 /* IndexPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexPage.swift; sourceTree = "<group>"; };
 		9E4B04BD25A739D20071C1C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E4B04C225A739D20071C1C3 /* paydey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = paydey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E4B04C525A739D20071C1C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E4B04CA25A739D20071C1C3 /* paydey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = paydey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E4B04CC25A739D20071C1C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E4B04CD25A739D20071C1C3 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		9E4B04DF25A73B900071C1C3 /* Color.Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.Ext.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +59,9 @@
 		9E4B04BA25A739D10071C1C3 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				9E4B04DE25A73B7F0071C1C3 /* Extensions */,
 				9E4B04BB25A739D10071C1C3 /* paydeyApp.swift */,
-				9E4B04BC25A739D10071C1C3 /* ContentView.swift */,
+				9E4B04BC25A739D10071C1C3 /* IndexPage.swift */,
 				9E4B04BD25A739D20071C1C3 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -88,6 +91,14 @@
 				9E4B04CD25A739D20071C1C3 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		9E4B04DE25A73B7F0071C1C3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9E4B04DF25A73B900071C1C3 /* Color.Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,7 +198,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E4B04D025A739D20071C1C3 /* ContentView.swift in Sources */,
+				9E4B04D025A739D20071C1C3 /* IndexPage.swift in Sources */,
+				9E4B04E025A73B900071C1C3 /* Color.Ext.swift in Sources */,
 				9E4B04CE25A739D20071C1C3 /* paydeyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,7 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E4B04D125A739D20071C1C3 /* ContentView.swift in Sources */,
+				9E4B04D125A739D20071C1C3 /* IndexPage.swift in Sources */,
 				9E4B04CF25A739D20071C1C3 /* paydeyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

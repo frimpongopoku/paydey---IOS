@@ -11,7 +11,7 @@ import SwiftUI
 struct paydeyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            IndexPage()
         }
     }
 }
