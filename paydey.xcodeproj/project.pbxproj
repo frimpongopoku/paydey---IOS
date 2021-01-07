@@ -14,6 +14,12 @@
 		9E4B04D225A739D20071C1C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E4B04BD25A739D20071C1C3 /* Assets.xcassets */; };
 		9E4B04D325A739D20071C1C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E4B04BD25A739D20071C1C3 /* Assets.xcassets */; };
 		9E4B04E025A73B900071C1C3 /* Color.Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B04DF25A73B900071C1C3 /* Color.Ext.swift */; };
+		9E4B04F125A768D40071C1C3 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B04F025A768D40071C1C3 /* SplashScreen.swift */; };
+		9E4B04F625A76C000071C1C3 /* FloatingBottomNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B04F525A76C000071C1C3 /* FloatingBottomNav.swift */; };
+		9E4B04FC25A773F90071C1C3 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B04FB25A773F90071C1C3 /* LandingPage.swift */; };
+		9E4B050025A7754D0071C1C3 /* TransparentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B04FF25A7754D0071C1C3 /* TransparentCard.swift */; };
+		9E4B050425A776E90071C1C3 /* InvoiceRecordCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B050325A776E90071C1C3 /* InvoiceRecordCard.swift */; };
+		9E4B050825A77A8A0071C1C3 /* InvoiceListDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B050725A77A8A0071C1C3 /* InvoiceListDisplay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		9E4B04CC25A739D20071C1C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E4B04CD25A739D20071C1C3 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		9E4B04DF25A73B900071C1C3 /* Color.Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.Ext.swift; sourceTree = "<group>"; };
+		9E4B04F025A768D40071C1C3 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		9E4B04F525A76C000071C1C3 /* FloatingBottomNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingBottomNav.swift; sourceTree = "<group>"; };
+		9E4B04FB25A773F90071C1C3 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
+		9E4B04FF25A7754D0071C1C3 /* TransparentCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentCard.swift; sourceTree = "<group>"; };
+		9E4B050325A776E90071C1C3 /* InvoiceRecordCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceRecordCard.swift; sourceTree = "<group>"; };
+		9E4B050725A77A8A0071C1C3 /* InvoiceListDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceListDisplay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +71,8 @@
 		9E4B04BA25A739D10071C1C3 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				9E4B04F425A76BE00071C1C3 /* Components */,
+				9E4B04E725A768AC0071C1C3 /* Pages */,
 				9E4B04DE25A73B7F0071C1C3 /* Extensions */,
 				9E4B04BB25A739D10071C1C3 /* paydeyApp.swift */,
 				9E4B04BC25A739D10071C1C3 /* IndexPage.swift */,
@@ -99,6 +113,26 @@
 				9E4B04DF25A73B900071C1C3 /* Color.Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9E4B04E725A768AC0071C1C3 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				9E4B04F025A768D40071C1C3 /* SplashScreen.swift */,
+				9E4B04FB25A773F90071C1C3 /* LandingPage.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		9E4B04F425A76BE00071C1C3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9E4B04F525A76C000071C1C3 /* FloatingBottomNav.swift */,
+				9E4B04FF25A7754D0071C1C3 /* TransparentCard.swift */,
+				9E4B050325A776E90071C1C3 /* InvoiceRecordCard.swift */,
+				9E4B050725A77A8A0071C1C3 /* InvoiceListDisplay.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,9 +232,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E4B050825A77A8A0071C1C3 /* InvoiceListDisplay.swift in Sources */,
+				9E4B050425A776E90071C1C3 /* InvoiceRecordCard.swift in Sources */,
+				9E4B04F125A768D40071C1C3 /* SplashScreen.swift in Sources */,
 				9E4B04D025A739D20071C1C3 /* IndexPage.swift in Sources */,
+				9E4B04FC25A773F90071C1C3 /* LandingPage.swift in Sources */,
 				9E4B04E025A73B900071C1C3 /* Color.Ext.swift in Sources */,
 				9E4B04CE25A739D20071C1C3 /* paydeyApp.swift in Sources */,
+				9E4B04F625A76C000071C1C3 /* FloatingBottomNav.swift in Sources */,
+				9E4B050025A7754D0071C1C3 /* TransparentCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -3,8 +3,7 @@ import SwiftUI
 
 struct IndexPage: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+       LandingPage()
     }
 }
 
