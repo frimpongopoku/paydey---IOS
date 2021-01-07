@@ -10,7 +10,7 @@ struct FloatingBottomNav: View {
 			HStack(alignment:.center, spacing:16){
 				TabMenuItem(iconSize:Font.title2, spacing:4.0, tabIcon: "plus", tabTitle: "Create")
 				TabMenuItem(tabIcon: "gearshape", tabTitle: "Settings")
-			}.padding(.top)
+			}.padding(.top,10)
 		}
 	}
 }

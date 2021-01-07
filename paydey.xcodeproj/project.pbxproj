@@ -20,6 +20,9 @@
 		9E4B050025A7754D0071C1C3 /* TransparentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B04FF25A7754D0071C1C3 /* TransparentCard.swift */; };
 		9E4B050425A776E90071C1C3 /* InvoiceRecordCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B050325A776E90071C1C3 /* InvoiceRecordCard.swift */; };
 		9E4B050825A77A8A0071C1C3 /* InvoiceListDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B050725A77A8A0071C1C3 /* InvoiceListDisplay.swift */; };
+		9E4B050C25A799FD0071C1C3 /* OldInvoicesDisplayPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B050B25A799FC0071C1C3 /* OldInvoicesDisplayPage.swift */; };
+		9E4B051025A79A8C0071C1C3 /* Konstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B050F25A79A8C0071C1C3 /* Konstants.swift */; };
+		9E4B051525A79CE20071C1C3 /* ApplicationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B051425A79CE20071C1C3 /* ApplicationState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		9E4B04FF25A7754D0071C1C3 /* TransparentCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentCard.swift; sourceTree = "<group>"; };
 		9E4B050325A776E90071C1C3 /* InvoiceRecordCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceRecordCard.swift; sourceTree = "<group>"; };
 		9E4B050725A77A8A0071C1C3 /* InvoiceListDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceListDisplay.swift; sourceTree = "<group>"; };
+		9E4B050B25A799FC0071C1C3 /* OldInvoicesDisplayPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldInvoicesDisplayPage.swift; sourceTree = "<group>"; };
+		9E4B050F25A79A8C0071C1C3 /* Konstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Konstants.swift; sourceTree = "<group>"; };
+		9E4B051425A79CE20071C1C3 /* ApplicationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,7 @@
 		9E4B04BA25A739D10071C1C3 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				9E4B051325A79CBE0071C1C3 /* View Models */,
 				9E4B04F425A76BE00071C1C3 /* Components */,
 				9E4B04E725A768AC0071C1C3 /* Pages */,
 				9E4B04DE25A73B7F0071C1C3 /* Extensions */,
@@ -120,6 +127,8 @@
 			children = (
 				9E4B04F025A768D40071C1C3 /* SplashScreen.swift */,
 				9E4B04FB25A773F90071C1C3 /* LandingPage.swift */,
+				9E4B050B25A799FC0071C1C3 /* OldInvoicesDisplayPage.swift */,
+				9E4B050F25A79A8C0071C1C3 /* Konstants.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -133,6 +142,14 @@
 				9E4B050725A77A8A0071C1C3 /* InvoiceListDisplay.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		9E4B051325A79CBE0071C1C3 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				9E4B051425A79CE20071C1C3 /* ApplicationState.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,7 +252,10 @@
 				9E4B050825A77A8A0071C1C3 /* InvoiceListDisplay.swift in Sources */,
 				9E4B050425A776E90071C1C3 /* InvoiceRecordCard.swift in Sources */,
 				9E4B04F125A768D40071C1C3 /* SplashScreen.swift in Sources */,
+				9E4B051025A79A8C0071C1C3 /* Konstants.swift in Sources */,
+				9E4B050C25A799FD0071C1C3 /* OldInvoicesDisplayPage.swift in Sources */,
 				9E4B04D025A739D20071C1C3 /* IndexPage.swift in Sources */,
+				9E4B051525A79CE20071C1C3 /* ApplicationState.swift in Sources */,
 				9E4B04FC25A773F90071C1C3 /* LandingPage.swift in Sources */,
 				9E4B04E025A73B900071C1C3 /* Color.Ext.swift in Sources */,
 				9E4B04CE25A739D20071C1C3 /* paydeyApp.swift in Sources */,

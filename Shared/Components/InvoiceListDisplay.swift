@@ -4,8 +4,11 @@ import SwiftUI
 struct InvoiceListDisplay: View {
 	var body: some View {
 		VStack{
-			ForEach(1...5, id:\.self) {_ in
-				InvoiceRecordCard()
+			ScrollView(/*@START_MENU_TOKEN@*/.vertical/*@END_MENU_TOKEN@*/, showsIndicators: false){
+				ForEach(1...5, id:\.self) {_ in
+					InvoiceRecordCard()
+						.frame(height:67)
+				}
 			}
 		}
 	}
