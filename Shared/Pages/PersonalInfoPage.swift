@@ -34,29 +34,7 @@ struct PersonalInfoForm : View {
 }
 
 
-// -------- TextBox component ------------
-struct TextBoxComponent : View {
-	var labelName = "Name"
-	var placeholder = "Placeholder"
-	@Binding var text : String
-	
-	var body : some View {
-		VStack(alignment:.leading){
-			Text(labelName)
-				.fontWeight(.semibold)
-				.font(.caption2)
-				.foregroundColor(.titleBlack)
-			TransparentCard(widthRoundness:6, heightRoundness: 6, rounded:false, shadowColor:.glass)
-				.frame(height:40)
-				.overlay(
-					TextField(placeholder, text: $text)
-						.font(.caption)
-						.padding()
-				)
-				.overlay(Rectangle().stroke(lineWidth: 1).foregroundColor(.white))
-		}
-	}
-}
+
 
 //----- Logo Adding Component ---------
 struct LogoView : View {

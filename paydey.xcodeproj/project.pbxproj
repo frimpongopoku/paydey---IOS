@@ -24,6 +24,8 @@
 		9E4B051025A79A8C0071C1C3 /* Konstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B050F25A79A8C0071C1C3 /* Konstants.swift */; };
 		9E4B051525A79CE20071C1C3 /* ApplicationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B051425A79CE20071C1C3 /* ApplicationState.swift */; };
 		9E4B051B25A865820071C1C3 /* PersonalInfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B051A25A865820071C1C3 /* PersonalInfoPage.swift */; };
+		9E4B052025A88C530071C1C3 /* PayersInfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B051F25A88C520071C1C3 /* PayersInfoPage.swift */; };
+		9E4B052625A88D3A0071C1C3 /* TextBoxComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B052525A88D3A0071C1C3 /* TextBoxComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		9E4B050F25A79A8C0071C1C3 /* Konstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Konstants.swift; sourceTree = "<group>"; };
 		9E4B051425A79CE20071C1C3 /* ApplicationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationState.swift; sourceTree = "<group>"; };
 		9E4B051A25A865820071C1C3 /* PersonalInfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoPage.swift; sourceTree = "<group>"; };
+		9E4B051F25A88C520071C1C3 /* PayersInfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayersInfoPage.swift; sourceTree = "<group>"; };
+		9E4B052525A88D3A0071C1C3 /* TextBoxComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBoxComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,7 @@
 				9E4B050B25A799FC0071C1C3 /* OldInvoicesDisplayPage.swift */,
 				9E4B050F25A79A8C0071C1C3 /* Konstants.swift */,
 				9E4B051A25A865820071C1C3 /* PersonalInfoPage.swift */,
+				9E4B051F25A88C520071C1C3 /* PayersInfoPage.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 				9E4B04FF25A7754D0071C1C3 /* TransparentCard.swift */,
 				9E4B050325A776E90071C1C3 /* InvoiceRecordCard.swift */,
 				9E4B050725A77A8A0071C1C3 /* InvoiceListDisplay.swift */,
+				9E4B052525A88D3A0071C1C3 /* TextBoxComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -252,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E4B052025A88C530071C1C3 /* PayersInfoPage.swift in Sources */,
 				9E4B050825A77A8A0071C1C3 /* InvoiceListDisplay.swift in Sources */,
 				9E4B050425A776E90071C1C3 /* InvoiceRecordCard.swift in Sources */,
 				9E4B04F125A768D40071C1C3 /* SplashScreen.swift in Sources */,
@@ -264,6 +271,7 @@
 				9E4B04E025A73B900071C1C3 /* Color.Ext.swift in Sources */,
 				9E4B04CE25A739D20071C1C3 /* paydeyApp.swift in Sources */,
 				9E4B04F625A76C000071C1C3 /* FloatingBottomNav.swift in Sources */,
+				9E4B052625A88D3A0071C1C3 /* TextBoxComponent.swift in Sources */,
 				9E4B050025A7754D0071C1C3 /* TransparentCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
