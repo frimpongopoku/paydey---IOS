@@ -23,6 +23,7 @@
 		9E4B050C25A799FD0071C1C3 /* OldInvoicesDisplayPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B050B25A799FC0071C1C3 /* OldInvoicesDisplayPage.swift */; };
 		9E4B051025A79A8C0071C1C3 /* Konstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B050F25A79A8C0071C1C3 /* Konstants.swift */; };
 		9E4B051525A79CE20071C1C3 /* ApplicationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B051425A79CE20071C1C3 /* ApplicationState.swift */; };
+		9E4B051B25A865820071C1C3 /* PersonalInfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B051A25A865820071C1C3 /* PersonalInfoPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		9E4B050B25A799FC0071C1C3 /* OldInvoicesDisplayPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldInvoicesDisplayPage.swift; sourceTree = "<group>"; };
 		9E4B050F25A79A8C0071C1C3 /* Konstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Konstants.swift; sourceTree = "<group>"; };
 		9E4B051425A79CE20071C1C3 /* ApplicationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationState.swift; sourceTree = "<group>"; };
+		9E4B051A25A865820071C1C3 /* PersonalInfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				9E4B04FB25A773F90071C1C3 /* LandingPage.swift */,
 				9E4B050B25A799FC0071C1C3 /* OldInvoicesDisplayPage.swift */,
 				9E4B050F25A79A8C0071C1C3 /* Konstants.swift */,
+				9E4B051A25A865820071C1C3 /* PersonalInfoPage.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				9E4B04D025A739D20071C1C3 /* IndexPage.swift in Sources */,
 				9E4B051525A79CE20071C1C3 /* ApplicationState.swift in Sources */,
 				9E4B04FC25A773F90071C1C3 /* LandingPage.swift in Sources */,
+				9E4B051B25A865820071C1C3 /* PersonalInfoPage.swift in Sources */,
 				9E4B04E025A73B900071C1C3 /* Color.Ext.swift in Sources */,
 				9E4B04CE25A739D20071C1C3 /* paydeyApp.swift in Sources */,
 				9E4B04F625A76C000071C1C3 /* FloatingBottomNav.swift in Sources */,

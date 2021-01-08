@@ -8,8 +8,11 @@ struct LandingPage: View {
 		ZStack{
 			//--- Navigation Beginning -----
 			NavigationView{
-				NavigationLink("", destination: OldInvoicesDisplayPage(), tag: Pages.OLD_INVOICES, selection: $state.CURRENT_PAGE)
-			//-------- Navigation End Wrapper -----
+				ZStack{
+					NavigationLink("", destination: OldInvoicesDisplayPage(), tag: Pages.OLD_INVOICES, selection: $state.CURRENT_PAGE)
+					NavigationLink("", destination: PersonalInfoPage(), tag: Pages.PERSONAL_INFO, selection: $state.CURRENT_PAGE)
+				}
+				//-------- Navigation End Wrapper -----
 			}
 			//---- Bottom Area -------
 			VStack{
@@ -21,8 +24,7 @@ struct LandingPage: View {
 }
 
 struct LandingPage_Previews: PreviewProvider {
-	
 	static var previews: some View {
-		LandingPage()
+		LandingPage().environmentObject(ApplicationState())
 	}
 }

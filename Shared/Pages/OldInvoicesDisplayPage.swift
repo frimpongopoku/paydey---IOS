@@ -7,7 +7,6 @@ struct OldInvoicesDisplayPage: View {
 		ZStack{
 			Color.appColorGradientCenteredThick
 			InvoiceListDisplay()
-				.navigationBarBackButtonHidden(true)
 				.navigationBarItems(
 					leading:
 						Text("PAYDEY")
@@ -15,6 +14,8 @@ struct OldInvoicesDisplayPage: View {
 						.fontWeight(.semibold)
 					
 				)
+				.navigationBarBackButtonHidden(true)
+				
 		}
 	}
 }
