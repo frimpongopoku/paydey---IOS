@@ -6,6 +6,7 @@ struct LandingPage: View {
 	@EnvironmentObject var state : ApplicationState
 	var body: some View {
 		ZStack{
+	
 			//--- Navigation Beginning -----
 			NavigationView{
 				ZStack{

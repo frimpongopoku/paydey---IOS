@@ -14,7 +14,7 @@ struct OldInvoicesDisplayPage: View {
 						.fontWeight(.semibold)
 					
 				)
-				.navigationBarBackButtonHidden(true)
+				.navigationBarHidden(true)
 				
 		}
 	}
