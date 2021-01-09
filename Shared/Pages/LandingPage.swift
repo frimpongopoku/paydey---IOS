@@ -6,8 +6,8 @@ struct LandingPage: View {
 	@EnvironmentObject var state : ApplicationState
 	var body: some View {
 		ZStack{
-	
-			//--- Navigation Beginning -----
+			//--- Navigation Beginning ----------
+			
 			NavigationView{
 				ZStack{
 					NavigationLink("", destination: OldInvoicesDisplayPage(), tag: Pages.OLD_INVOICES, selection: $state.CURRENT_PAGE)

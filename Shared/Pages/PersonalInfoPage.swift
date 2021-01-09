@@ -5,11 +5,18 @@ struct PersonalInfoPage: View {
 	var body: some View {
 		ZStack{
 			Color.appColorGradient
-			VStack{
+			VStack(alignment:.leading){
+				Text("PERSONAL INFO")
+					.font(.title)
+					.fontWeight(.semibold)
+					.padding(.leading)
+				ScrollView{
 				LogoView()
-				Spacer()
+					.frame(height:200)
+					.padding([.leading,.trailing])
 				PersonalInfoForm()
-				Spacer()
+	
+				}
 			}
 		}.navigationBarHidden(true)
 	}
@@ -20,7 +27,7 @@ struct PersonalInfoForm : View {
 	@State var text : String = ""
 	var body : some View {
 		VStack(alignment:.leading){
-			ScrollView{
+//			ScrollView{
 				TextBoxComponent( placeholder: "Your name...", text: $text)
 				TextBoxComponent( labelName: "Your company name(Optional)", placeholder: "Company Name...", text: $text)
 				Spacer()
@@ -28,8 +35,8 @@ struct PersonalInfoForm : View {
 				TextBoxComponent( labelName:"Means Of Payment", placeholder: "Payment Method...", text: $text)
 				TextBoxComponent( labelName: "Currency", placeholder: "Ghana Cedi - GHS", text: $text)
 				
-			}.padding([.trailing,.leading])
-		}
+//			}
+		}.padding([.trailing,.leading])
 	}
 }
 

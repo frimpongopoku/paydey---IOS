@@ -8,9 +8,9 @@ struct OldInvoicesDisplayPage: View {
 			Color.appColorGradientCenteredThick
 			VStack(alignment:.leading){
 				Text("PAYDEY")
-					.font(.largeTitle)
+					.font(.title)
 					.fontWeight(.semibold)
-					.padding()
+					.padding(.leading)
 				
 				
 				InvoiceListDisplay()
