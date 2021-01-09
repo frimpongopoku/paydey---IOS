@@ -1,7 +1,8 @@
 
 import Foundation
- 
+import SwiftUI
 class ApplicationState : ObservableObject {
+	
 	@Published var MENU_TYPE  = Menus.MAIN_MENU
 	@Published var CURRENT_PAGE : String? = Pages.OLD_INVOICES {
 		didSet{
@@ -22,33 +23,37 @@ class ApplicationState : ObservableObject {
 	
 	
 	func moveToPreviousPage(){
-		if( CURRENT_PAGE == Pages.PERSONAL_INFO){
-			self.CURRENT_PAGE = Pages.OLD_INVOICES
-			return;
-		}
-		
-		if( CURRENT_PAGE == Pages.PAYER_INFO){
-			self.CURRENT_PAGE = Pages.PERSONAL_INFO
-			return;
-		}
-		
-		if( CURRENT_PAGE == Pages.ADD_RECORDS){
-			self.CURRENT_PAGE = Pages.PAYER_INFO
-			return;
+		withAnimation{
+			if( CURRENT_PAGE == Pages.PERSONAL_INFO){
+				self.CURRENT_PAGE = Pages.OLD_INVOICES
+				return;
+			}
+			
+			if( CURRENT_PAGE == Pages.PAYER_INFO){
+				self.CURRENT_PAGE = Pages.PERSONAL_INFO
+				return;
+			}
+			
+			if( CURRENT_PAGE == Pages.ADD_RECORDS){
+				self.CURRENT_PAGE = Pages.PAYER_INFO
+				return;
+			}
 		}
 	}
 	
 	
 	func moveToNextPage(){
-		if( CURRENT_PAGE == Pages.PERSONAL_INFO){
-			self.CURRENT_PAGE = Pages.PAYER_INFO
-			return;
-		}
-		
-		if( CURRENT_PAGE == Pages.PAYER_INFO){
-			self.CURRENT_PAGE = Pages.ADD_RECORDS
-			return;
+		withAnimation{
+			if( CURRENT_PAGE == Pages.PERSONAL_INFO){
+				self.CURRENT_PAGE = Pages.PAYER_INFO
+				return;
+			}
+			
+			if( CURRENT_PAGE == Pages.PAYER_INFO){
+				self.CURRENT_PAGE = Pages.ADD_RECORDS
+				return;
+			}
 		}
 	}
-
+	
 }

@@ -27,13 +27,6 @@ struct PayersInfoPage: View {
 				}
 			}.padding([.leading,.trailing])
 		}.navigationBarHidden(true)
-		//		.navigationBarItems(
-		//			leading:
-		//				Text("PAYER's INFORMATION")
-		//				.font(.title2)
-		//				.fontWeight(.semibold)
-		//		)
-		//		.navigationBarBackButtonHidden(true)
 	}
 }
 

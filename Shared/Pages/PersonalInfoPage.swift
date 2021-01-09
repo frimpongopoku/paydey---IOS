@@ -2,6 +2,7 @@
 import SwiftUI
 
 struct PersonalInfoPage: View {
+	@ObservedObject var anime  =  AnimationStates()
 	var body: some View {
 		ZStack{
 			Color.appColorGradient
@@ -11,14 +12,22 @@ struct PersonalInfoPage: View {
 					.fontWeight(.semibold)
 					.padding(.leading)
 				ScrollView{
-				LogoView()
-					.frame(height:200)
-					.padding([.leading,.trailing])
-				PersonalInfoForm()
-	
+					LogoView()
+						.frame(height:200)
+						.padding([.leading,.trailing])
+					PersonalInfoForm()
+					
 				}
 			}
-		}.navigationBarHidden(true)
+		}.offset(x:  anime.PI_X_OFFSET)
+		.animation(.easeOut(duration:0.3))
+		.onAppear(){
+			anime.animatePersonalInfoPage = true
+		}
+		.onDisappear(){
+			anime.animatePersonalInfoPage = false
+		}
+		.navigationBarHidden(true)
 	}
 }
 
@@ -27,15 +36,15 @@ struct PersonalInfoForm : View {
 	@State var text : String = ""
 	var body : some View {
 		VStack(alignment:.leading){
-//			ScrollView{
-				TextBoxComponent( placeholder: "Your name...", text: $text)
-				TextBoxComponent( labelName: "Your company name(Optional)", placeholder: "Company Name...", text: $text)
-				Spacer()
-					.frame(height:100)
-				TextBoxComponent( labelName:"Means Of Payment", placeholder: "Payment Method...", text: $text)
-				TextBoxComponent( labelName: "Currency", placeholder: "Ghana Cedi - GHS", text: $text)
-				
-//			}
+			//			ScrollView{
+			TextBoxComponent( placeholder: "Your name...", text: $text)
+			TextBoxComponent( labelName: "Your company name(Optional)", placeholder: "Company Name...", text: $text)
+			Spacer()
+				.frame(height:100)
+			TextBoxComponent( labelName:"Means Of Payment", placeholder: "Payment Method...", text: $text)
+			TextBoxComponent( labelName: "Currency", placeholder: "Ghana Cedi - GHS", text: $text)
+			
+			//			}
 		}.padding([.trailing,.leading])
 	}
 }

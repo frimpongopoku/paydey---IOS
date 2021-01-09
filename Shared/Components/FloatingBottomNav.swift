@@ -75,7 +75,12 @@ struct RoundedNavButton: View {
 	var iconName  = "arrow.forward"
 	var function : () -> Void
 	var body: some View {
-		Button(action:{self.function()}){
+		Button(action:{
+			withAnimation{
+				self.function()
+			}
+			
+		}){
 			ZStack{
 				Circle()
 					.stroke()

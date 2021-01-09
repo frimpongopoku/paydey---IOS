@@ -27,6 +27,7 @@
 		9E4B052025A88C530071C1C3 /* PayersInfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B051F25A88C520071C1C3 /* PayersInfoPage.swift */; };
 		9E4B052625A88D3A0071C1C3 /* TextBoxComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B052525A88D3A0071C1C3 /* TextBoxComponent.swift */; };
 		9E83EAE625A95B2A003167A7 /* AddRecordsAndGeneratePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E83EAE525A95B2A003167A7 /* AddRecordsAndGeneratePage.swift */; };
+		9E83EAEA25A9DDE6003167A7 /* AnimationStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E83EAE925A9DDE6003167A7 /* AnimationStates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		9E4B051F25A88C520071C1C3 /* PayersInfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayersInfoPage.swift; sourceTree = "<group>"; };
 		9E4B052525A88D3A0071C1C3 /* TextBoxComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBoxComponent.swift; sourceTree = "<group>"; };
 		9E83EAE525A95B2A003167A7 /* AddRecordsAndGeneratePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecordsAndGeneratePage.swift; sourceTree = "<group>"; };
+		9E83EAE925A9DDE6003167A7 /* AnimationStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationStates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,10 +138,10 @@
 				9E4B04F025A768D40071C1C3 /* SplashScreen.swift */,
 				9E4B04FB25A773F90071C1C3 /* LandingPage.swift */,
 				9E4B050B25A799FC0071C1C3 /* OldInvoicesDisplayPage.swift */,
-				9E4B050F25A79A8C0071C1C3 /* Konstants.swift */,
 				9E4B051A25A865820071C1C3 /* PersonalInfoPage.swift */,
 				9E4B051F25A88C520071C1C3 /* PayersInfoPage.swift */,
 				9E83EAE525A95B2A003167A7 /* AddRecordsAndGeneratePage.swift */,
+				9E4B050F25A79A8C0071C1C3 /* Konstants.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -160,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				9E4B051425A79CE20071C1C3 /* ApplicationState.swift */,
+				9E83EAE925A9DDE6003167A7 /* AnimationStates.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				9E4B04D025A739D20071C1C3 /* IndexPage.swift in Sources */,
 				9E4B051525A79CE20071C1C3 /* ApplicationState.swift in Sources */,
 				9E4B04FC25A773F90071C1C3 /* LandingPage.swift in Sources */,
+				9E83EAEA25A9DDE6003167A7 /* AnimationStates.swift in Sources */,
 				9E4B051B25A865820071C1C3 /* PersonalInfoPage.swift in Sources */,
 				9E4B04E025A73B900071C1C3 /* Color.Ext.swift in Sources */,
 				9E4B04CE25A739D20071C1C3 /* paydeyApp.swift in Sources */,
