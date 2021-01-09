@@ -26,6 +26,7 @@
 		9E4B051B25A865820071C1C3 /* PersonalInfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B051A25A865820071C1C3 /* PersonalInfoPage.swift */; };
 		9E4B052025A88C530071C1C3 /* PayersInfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B051F25A88C520071C1C3 /* PayersInfoPage.swift */; };
 		9E4B052625A88D3A0071C1C3 /* TextBoxComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B052525A88D3A0071C1C3 /* TextBoxComponent.swift */; };
+		9E83EAE625A95B2A003167A7 /* AddRecordsAndGeneratePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E83EAE525A95B2A003167A7 /* AddRecordsAndGeneratePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		9E4B051A25A865820071C1C3 /* PersonalInfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoPage.swift; sourceTree = "<group>"; };
 		9E4B051F25A88C520071C1C3 /* PayersInfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayersInfoPage.swift; sourceTree = "<group>"; };
 		9E4B052525A88D3A0071C1C3 /* TextBoxComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBoxComponent.swift; sourceTree = "<group>"; };
+		9E83EAE525A95B2A003167A7 /* AddRecordsAndGeneratePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecordsAndGeneratePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				9E4B050F25A79A8C0071C1C3 /* Konstants.swift */,
 				9E4B051A25A865820071C1C3 /* PersonalInfoPage.swift */,
 				9E4B051F25A88C520071C1C3 /* PayersInfoPage.swift */,
+				9E83EAE525A95B2A003167A7 /* AddRecordsAndGeneratePage.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E83EAE625A95B2A003167A7 /* AddRecordsAndGeneratePage.swift in Sources */,
 				9E4B052025A88C530071C1C3 /* PayersInfoPage.swift in Sources */,
 				9E4B050825A77A8A0071C1C3 /* InvoiceListDisplay.swift in Sources */,
 				9E4B050425A776E90071C1C3 /* InvoiceRecordCard.swift in Sources */,
