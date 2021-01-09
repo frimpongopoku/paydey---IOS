@@ -2,6 +2,7 @@
 import Foundation
 import SwiftUI
 extension Color {
+	static var dirtyOrange : Color = Color ("Dirty-Orange")
 	static var backgroundWhite : Color = Color("Background")
 	static var themeOrange : Color = Color("Theme-Orange")
 	static var logoOrange : Color = Color("Logo-Orange")
