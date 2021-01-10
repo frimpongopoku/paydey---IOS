@@ -2,6 +2,8 @@
 import Foundation
 import SwiftUI
 class ApplicationState : ObservableObject {
+	@Published var showRecordSheet = false
+
 	@Published var MENU_TYPE  = Menus.MAIN_MENU
 	@Published var CURRENT_PAGE : String? = Pages.OLD_INVOICES {
 		didSet{

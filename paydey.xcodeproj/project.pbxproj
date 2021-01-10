@@ -29,6 +29,7 @@
 		9E83EAE625A95B2A003167A7 /* AddRecordsAndGeneratePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E83EAE525A95B2A003167A7 /* AddRecordsAndGeneratePage.swift */; };
 		9E83EAEA25A9DDE6003167A7 /* AnimationStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E83EAE925A9DDE6003167A7 /* AnimationStates.swift */; };
 		9E83EAF025AA9F64003167A7 /* BigRoundAddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E83EAEF25AA9F64003167A7 /* BigRoundAddButton.swift */; };
+		9E83EAF425AB8DF0003167A7 /* RecordingSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E83EAF325AB8DF0003167A7 /* RecordingSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		9E83EAE525A95B2A003167A7 /* AddRecordsAndGeneratePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecordsAndGeneratePage.swift; sourceTree = "<group>"; };
 		9E83EAE925A9DDE6003167A7 /* AnimationStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationStates.swift; sourceTree = "<group>"; };
 		9E83EAEF25AA9F64003167A7 /* BigRoundAddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigRoundAddButton.swift; sourceTree = "<group>"; };
+		9E83EAF325AB8DF0003167A7 /* RecordingSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				9E4B051F25A88C520071C1C3 /* PayersInfoPage.swift */,
 				9E83EAE525A95B2A003167A7 /* AddRecordsAndGeneratePage.swift */,
 				9E4B050F25A79A8C0071C1C3 /* Konstants.swift */,
+				9E83EAF325AB8DF0003167A7 /* RecordingSheet.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				9E4B051025A79A8C0071C1C3 /* Konstants.swift in Sources */,
 				9E4B050C25A799FD0071C1C3 /* OldInvoicesDisplayPage.swift in Sources */,
 				9E4B04D025A739D20071C1C3 /* IndexPage.swift in Sources */,
+				9E83EAF425AB8DF0003167A7 /* RecordingSheet.swift in Sources */,
 				9E4B051525A79CE20071C1C3 /* ApplicationState.swift in Sources */,
 				9E4B04FC25A773F90071C1C3 /* LandingPage.swift in Sources */,
 				9E83EAEA25A9DDE6003167A7 /* AnimationStates.swift in Sources */,

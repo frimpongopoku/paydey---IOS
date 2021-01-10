@@ -5,7 +5,6 @@ import SwiftUI
 struct LandingPage: View {
 	@EnvironmentObject var state : ApplicationState
 	@StateObject var anime = AnimationStates()	
-//	@State var navShow = false
 	var body: some View {
 		ZStack{
 			//--- Navigation Beginning ----------
@@ -34,6 +33,9 @@ struct LandingPage: View {
 						anime.showNav = true
 					}
 			}
+		}.sheet(isPresented: $state.showRecordSheet){
+			RecordingSheet(state:state)
+			
 		}
 	}
 }

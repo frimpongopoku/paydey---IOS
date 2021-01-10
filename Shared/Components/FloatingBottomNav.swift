@@ -61,14 +61,17 @@ struct AddRecordMenu: View {
 				.onDisappear(){
 					show = false
 				}
-			TabMenuItem(tabIcon:"plus",tabTitle: "Add Record")
-				.onAppear(){
-					show = true
-				}.scaleEffect(show ? 1 : 0.2)
-				.animation(Animation.easeOut(duration:0.2).delay(0.1))
-				.onDisappear(){
-					show = false
-				}
+			
+			Button(action:{state.showRecordSheet.toggle()}){
+				TabMenuItem(tabIcon:"plus",tabTitle: "Add Record")
+			}
+			.onAppear(){
+				show = true
+			}.scaleEffect(show ? 1 : 0.2)
+			.animation(Animation.easeOut(duration:0.2).delay(0.1))
+			.onDisappear(){
+				show = false
+			}
 		}
 	}
 }
