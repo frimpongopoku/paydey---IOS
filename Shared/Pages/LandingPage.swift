@@ -11,7 +11,7 @@ struct LandingPage: View {
 			
 			NavigationView{
 				ZStack{
-					NavigationLink("", destination: OldInvoicesDisplayPage(anime:anime), tag: Pages.OLD_INVOICES, selection: $state.CURRENT_PAGE)
+					NavigationLink("", destination: OldInvoicesDisplayPage(state:state,anime:anime), tag: Pages.OLD_INVOICES, selection: $state.CURRENT_PAGE)
 					NavigationLink("", destination:PersonalInfoPage(anime: anime), tag: Pages.PERSONAL_INFO, selection: $state.CURRENT_PAGE)
 						
 					NavigationLink("", destination: PayersInfoPage(anime:anime), tag: Pages.PAYER_INFO, selection: $state.CURRENT_PAGE)

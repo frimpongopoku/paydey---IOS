@@ -3,6 +3,7 @@
 import SwiftUI
 
 struct OldInvoicesDisplayPage: View {
+	@ObservedObject var state : ApplicationState
 	@ObservedObject var anime : AnimationStates
 	var body: some View {
 		ZStack{
@@ -22,8 +23,11 @@ struct OldInvoicesDisplayPage: View {
 						.foregroundColor(.titleBlack)
 						.padding(.bottom,40)
 					
-					Button(action:{}){
+					Button(action:{
+						state.CURRENT_PAGE = Pages.ADD_RECORDS
+					}){
 						BigRoundAddButton(anime: anime)
+					
 					}
 					
 				}.frame(maxWidth:.infinity)
@@ -50,6 +54,6 @@ struct OldInvoicesDisplayPage: View {
 
 struct OldInvoicesDisplayPage_Previews: PreviewProvider {
 	static var previews: some View {
-		OldInvoicesDisplayPage(anime: AnimationStates())
+		OldInvoicesDisplayPage(state: ApplicationState(), anime: AnimationStates())
 	}
 }
