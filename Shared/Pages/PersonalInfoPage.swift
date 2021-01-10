@@ -72,7 +72,6 @@ struct LogoView : View {
 						.fontWeight(.semibold)
 						.font(.caption)
 						.padding(.top)
-					
 				}
 			}
 		}

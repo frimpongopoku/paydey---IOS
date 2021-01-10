@@ -12,14 +12,23 @@ struct OldInvoicesDisplayPage: View {
 					.font(.title)
 					.fontWeight(.semibold)
 					.padding(.leading)
+				Spacer()
+				VStack{
+					Text("Start creating your invoices")
+						.font(.subheadline)
+						.foregroundColor(.titleBlack)
+						.padding(.bottom,40)
+					BigRoundAddButton(anime: anime)
+					
+				}
+				Spacer()
 				
-				
-				InvoiceListDisplay()
+				//InvoiceListDisplay()
 			}.navigationBarHidden(true)
 			
 			
 		}
-
+		
 		.offset(x:anime.FP_OFFSET_VALUE)
 		.animation(.easeOut(duration:0.2))
 		.onAppear(){
