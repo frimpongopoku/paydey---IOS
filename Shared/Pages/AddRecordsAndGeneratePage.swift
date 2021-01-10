@@ -2,6 +2,7 @@
 import SwiftUI
 
 struct AddRecordsAndGeneratePage: View {
+	@ObservedObject var anime : AnimationStates
 	var body: some View {
 		ZStack{
 			Color.appColorGradient
@@ -70,18 +71,14 @@ struct AddRecordsAndGeneratePage: View {
 				
 			}
 		}.navigationBarHidden(true)
-		.navigationBarBackButtonHidden(true)
-//		.navigationBarItems(
-//			leading:
-//				Text("ADD RECORDS")
-//				.font(.title2)
-//				.fontWeight(.semibold),
-//			trailing:Text("GHS - 65,775.00")
-//				.font(.title3)
-//				.fontWeight(.bold)
-//				.foregroundColor(.normalGreen)
-//
-//		)
+		.onAppear(){
+			anime.animateAddRecordsPage = true
+		}.onDisappear(){
+			anime.animateAddRecordsPage	 = false
+		}
+		.offset(x:  anime.ARP_OFFSET_VALUE)
+		.animation(.easeOut(duration:0.3))
+		
 	}
 }
 
@@ -129,6 +126,6 @@ struct InvoiceItemCard : View {
 }
 struct AddRecordsAndGeneratePage_Previews: PreviewProvider {
 	static var previews: some View {
-		AddRecordsAndGeneratePage()
+		AddRecordsAndGeneratePage(anime: AnimationStates())
 	}
 }

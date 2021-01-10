@@ -12,11 +12,11 @@ struct LandingPage: View {
 			
 			NavigationView{
 				ZStack{
-					NavigationLink("", destination: OldInvoicesDisplayPage(), tag: Pages.OLD_INVOICES, selection: $state.CURRENT_PAGE)
-					NavigationLink("", destination:PersonalInfoPage(), tag: Pages.PERSONAL_INFO, selection: $state.CURRENT_PAGE)
+					NavigationLink("", destination: OldInvoicesDisplayPage(anime:anime), tag: Pages.OLD_INVOICES, selection: $state.CURRENT_PAGE)
+					NavigationLink("", destination:PersonalInfoPage(anime: anime), tag: Pages.PERSONAL_INFO, selection: $state.CURRENT_PAGE)
 						
-					NavigationLink("", destination: PayersInfoPage(), tag: Pages.PAYER_INFO, selection: $state.CURRENT_PAGE)
-					NavigationLink("", destination: AddRecordsAndGeneratePage(), tag: Pages.ADD_RECORDS, selection: $state.CURRENT_PAGE)
+					NavigationLink("", destination: PayersInfoPage(anime:anime), tag: Pages.PAYER_INFO, selection: $state.CURRENT_PAGE)
+					NavigationLink("", destination: AddRecordsAndGeneratePage(anime:anime), tag: Pages.ADD_RECORDS, selection: $state.CURRENT_PAGE)
 
 				}
 				//-------- Navigation End Wrapper -----
@@ -24,7 +24,7 @@ struct LandingPage: View {
 			//---- Bottom Area -------
 			VStack{
 				Spacer()
-				FloatingBottomNav()
+				FloatingBottomNav(anime: anime)
 					.opacity(anime.showNav ? 1 : 0)
 					.offset( y: anime.showNav ? 0 : 10 )
 					.scaleEffect()

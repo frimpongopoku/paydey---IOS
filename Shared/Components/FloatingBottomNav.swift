@@ -2,7 +2,7 @@ import SwiftUI
 
 struct FloatingBottomNav: View {
 	@EnvironmentObject var appState : ApplicationState
-	
+	@ObservedObject var anime : AnimationStates
 	var body: some View {
 		ZStack{
 			RoundedRectangle(cornerSize: CGSize(width: 30, height: 210))
@@ -18,7 +18,7 @@ struct FloatingBottomNav: View {
 		case Menus.MAIN_MENU:
 			return AnyView(MainMenuUI(state: self.appState))
 		case Menus.FORWARD_AND_BACK:
-			return AnyView(DirectionalButtons(state: appState))
+			return AnyView(DirectionalButtons(state: appState, anime: anime))
 		case Menus.ADD_RECORD:
 			return AnyView(AddRecordMenu(state: appState))
 		default:
@@ -50,24 +50,61 @@ struct TabMenuItem : View {
 
 struct AddRecordMenu: View {
 	@ObservedObject var state : ApplicationState
+	@State var show = false
 	var body: some View {
 		HStack(spacing:20){
 			RoundedNavButton(iconName: "arrow.backward", function:state.moveToPreviousPage)
+				.onAppear(){
+					show = true
+				}.scaleEffect(show ? 1 : 0.2)
+				.animation(Animation.easeOut(duration:0.2))
+				.onDisappear(){
+					show = false
+				}
 			TabMenuItem(tabIcon:"plus",tabTitle: "Add Record")
+				.onAppear(){
+					show = true
+				}.scaleEffect(show ? 1 : 0.2)
+				.animation(Animation.easeOut(duration:0.2).delay(0.1))
+				.onDisappear(){
+					show = false
+				}
 		}
 	}
 }
 
 struct DirectionalButtons: View {
 	@ObservedObject var state : ApplicationState
+	@ObservedObject var anime : AnimationStates
+	@State var show  = false
 	var body: some View {
 		HStack(spacing:20){
-			RoundedNavButton(iconName: "arrow.backward", function:state.moveToPreviousPage)
-			RoundedNavButton(iconName: "arrow.forward", function:state.moveToNextPage)
+			RoundedNavButton(iconName: "arrow.backward", function: self.goBack)
+				.onAppear(){
+					show = true
+				}.scaleEffect(show ? 1 : 0.2)
+				.animation(.easeOut(duration:0.2))
+				.onDisappear(){
+					show = false
+				}
+			RoundedNavButton(iconName: "arrow.forward", function:self.goForward)
+				.onAppear(){
+					show = true
+				}.scaleEffect(show ? 1 : 0.2)
+				.animation(Animation.easeOut(duration:0.2).delay(0.1))
+				.onDisappear(){
+					show = false
+				}
 		}
 	}
-	func get(){
-		
+	func goForward(){
+		anime.ANIME_DIRECTION_INDEX = -1;
+		state.moveToNextPage()
+	}
+	
+	func goBack(){
+		anime.ANIME_DIRECTION_INDEX = 1;
+		state.moveToPreviousPage()
 	}
 }
 
@@ -107,6 +144,7 @@ class Menus {
 
 struct MainMenuUI: View {
 	@ObservedObject var state : ApplicationState
+	@State var show = false
 	var body: some View {
 		HStack(alignment:.center, spacing:16){
 			Button(
@@ -115,6 +153,12 @@ struct MainMenuUI: View {
 				}
 			){
 				TabMenuItem(iconSize:Font.title2, spacing:4.0, tabIcon: "plus", tabTitle: "Create", color:.black)
+			}	.onAppear(){
+				show = true
+			}.scaleEffect(show ? 1 : 0.2)
+			.animation(Animation.easeOut(duration:0.2))
+			.onDisappear(){
+				show = false
 			}
 			
 			Button(
@@ -124,6 +168,13 @@ struct MainMenuUI: View {
 			){
 				TabMenuItem(tabIcon: "gearshape", tabTitle: "Settings", color:.black)
 			}
+			.onAppear(){
+				show = true
+			}.scaleEffect(show ? 1 : 0.2)
+			.animation(Animation.easeOut(duration:0.2).delay(0.1))
+			.onDisappear(){
+				show = false
+			}
 		}.padding(.top,10)
 	}
 }
@@ -132,6 +183,6 @@ struct MainMenuUI: View {
 //---------------------- PREVIEW AREA --------------------------
 struct FloatingBottomNav_Previews: PreviewProvider {
 	static var previews: some View {
-		FloatingBottomNav().environmentObject(ApplicationState())
+		FloatingBottomNav(anime:AnimationStates()).environmentObject(ApplicationState())
 	}
 }

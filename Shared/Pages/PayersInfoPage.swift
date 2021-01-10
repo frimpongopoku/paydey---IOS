@@ -2,6 +2,7 @@
 import SwiftUI
 
 struct PayersInfoPage: View {
+	@ObservedObject var anime  : AnimationStates
 	@State var text : String = ""
 	var body: some View {
 		ZStack{
@@ -27,11 +28,18 @@ struct PayersInfoPage: View {
 				}
 			}.padding([.leading,.trailing])
 		}.navigationBarHidden(true)
+		.onAppear(){
+			anime.animatePayersPage = true
+		}.onDisappear(){
+			anime.animatePayersPage	 = false
+		}
+		.offset(x:  anime.PP_OFFSET_VALUE)
+		.animation(.easeOut(duration:0.3))
 	}
 }
 
 struct PayersInfoPage_Previews: PreviewProvider {
 	static var previews: some View {
-		PayersInfoPage()
+		PayersInfoPage(anime: AnimationStates())
 	}
 }

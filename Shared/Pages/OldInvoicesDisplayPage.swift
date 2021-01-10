@@ -3,28 +3,36 @@
 import SwiftUI
 
 struct OldInvoicesDisplayPage: View {
-	@ObservedObject var anime  = AnimationStates()
+	@ObservedObject var anime : AnimationStates
 	var body: some View {
 		ZStack{
 			Color.appColorGradientCenteredThick
 			VStack(alignment:.leading){
-				Text("PAYDEY")
-					.font(.title)
-					.fontWeight(.semibold)
-					.padding(.leading)
+				HStack{
+					Text("PAYDEY")
+						.font(.title)
+						.fontWeight(.semibold)
+						.padding(.leading)
+					Spacer()
+				}.frame(maxWidth:.infinity)
 				Spacer()
 				VStack{
 					Text("Start creating your invoices")
 						.font(.subheadline)
 						.foregroundColor(.titleBlack)
 						.padding(.bottom,40)
-					BigRoundAddButton(anime: anime)
 					
-				}
+					Button(action:{}){
+						BigRoundAddButton(anime: anime)
+					}
+					
+				}.frame(maxWidth:.infinity)
+				
 				Spacer()
 				
 				//InvoiceListDisplay()
-			}.navigationBarHidden(true)
+			}.frame(maxWidth:.infinity)
+			.navigationBarHidden(true)
 			
 			
 		}
@@ -42,6 +50,6 @@ struct OldInvoicesDisplayPage: View {
 
 struct OldInvoicesDisplayPage_Previews: PreviewProvider {
 	static var previews: some View {
-		OldInvoicesDisplayPage()
+		OldInvoicesDisplayPage(anime: AnimationStates())
 	}
 }

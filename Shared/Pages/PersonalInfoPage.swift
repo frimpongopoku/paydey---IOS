@@ -2,7 +2,7 @@
 import SwiftUI
 
 struct PersonalInfoPage: View {
-	@ObservedObject var anime  =  AnimationStates()
+	@ObservedObject var anime  : AnimationStates
 	var body: some View {
 		ZStack{
 			Color.appColorGradient
@@ -79,6 +79,6 @@ struct LogoView : View {
 }
 struct PersonalInfoPage_Previews: PreviewProvider {
 	static var previews: some View {
-		PersonalInfoPage()
+		PersonalInfoPage(anime: AnimationStates())
 	}
 }
